@@ -1,0 +1,38 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+USER: Thursday, May 11, 2023 at 08:59AM  - I want to play chess
+
+USER: Thursday, May 11, 2023 at 09:09AM  - I want to buy pistols
+
+USER: Thursday, May 11, 2023 at 09:14AM  - I want to buy pistols
+
+USER: Thursday, May 11, 2023 at 09:16AM  - I want to buy pistols
+
+USER: Thursday, May 11, 2023 at 09:29AM  - yes, I want more information, how much is this?
+
+USER: Thursday, May 11, 2023 at 09:32AM  - No that's good enough, I want to buy it now, is it available?
+
+USER: Thursday, May 11, 2023 at 09:33AM  - I want to buy now where I can buy it
+
+USER: Thursday, May 11, 2023 at 09:40AM  - yes I want to more about payment and delivery services
+
+USER: Thursday, May 11, 2023 at 09:56AM  - I want visit your company where is it?
+
+USER: Thursday, May 11, 2023 at 09:57AM  - I want to visit on Sundays
+
+
+
+NOTES:
+
+==========
+
+- User wants to play chess - Thursday, May 11, 2023 at 08:59AM 
+- User wants to buy pistols - Thursday, May 11, 2023 at 09:09AM, 09:14AM, 09:16AM
+- User wants more information about the pistols - Thursday, May 11, 2023 at 09:29AM
+- User wants to buy the pistols now - Thursday, May 11, 2023 at 09:32AM
+- User wants to know where to buy the pistols - Thursday, May 11, 2023 at 09:33AM
+- User wants more information about payment and delivery services - Thursday, May 11, 2023 at 09:40AM
+- User wants to know where the company is located - Thursday, May 11, 2023 at 09:56AM
+- User wants to visit the company on Sundays - Thursday, May 11, 2023 at 09:57AM

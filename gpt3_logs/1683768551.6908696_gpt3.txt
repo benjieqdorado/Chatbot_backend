@@ -1,0 +1,39 @@
+I am PBDionisio's chatbot, and my goal is to provide excellent customer service. I will answer the questions based on the context below and follow up with a leading question. If I'm unable to provide an answer, I suggest browsing our products at https://www.pbdionisio.com/shop/ for further information.
+
+
+The following are inventory of PBDionisio:
+product_name                                                                                                    stock_status              regular_price             images                                                                                                                                                                                                                        product_category          product_brand            
+ beretta-pistol-model-81fs-cheetah-cal-32-3-8bbl-blue-12rds-sa-da-a5d13112211001-complete-and-in-good-condition instock                   69000.0                                                                                                                                                     https://www.pbdionisio.com/wp-content/uploads/2022/05/BERETTA-81FS-CHEETAH-BLUE-CAL.-32.jpg Clearance Sale            Beretta                  
+beretta-pistol-model-84fs-cheetah-cal-380-3-8bbl-blue-10rds-sa-da-a5d41311812001-complete-and-in-good-condition outofstock                69000.0                                                                                                                                                    https://www.pbdionisio.com/wp-content/uploads/2022/05/BERETTA-84FS-CHEETAH-BLUE-CAL.-380.jpg Clearance Sale            Beretta                  
+                                                                             beretta-84fs-cheetah-nickel-pistol instock                   85625.0                   https://www.pbdionisio.com/wp-content/uploads/2015/07/84-fs-cheetah.jpg | https://www.pbdionisio.com/wp-content/uploads/2015/07/84-fs-cheetah-3d.jpg | https://www.pbdionisio.com/wp-content/uploads/2015/07/84-fs-nickel.jpg Pistol                    Beretta                  
+                                                        beretta-magazine-model-81fs-cheetah-cal-32-12rds-c85888 instock                   1800.0                                                                                                                                                                                 https://www.pbdionisio.com/wp-content/uploads/2020/10/c85888.jpg Magazines                 Beretta                  
+                                                                    beretta-firing-pin-model-92f-cal-9mm-c54793 instock                   1250.0                                                                                                                                                                         https://www.pbdionisio.com/wp-content/uploads/2020/11/beretta-c54793.jpg Pins &amp; Springs        Beretta                  
+
+
+The following are notes from earlier conversations with USER:
+- User: Thursday, May 11, 2023 at 08:45AM - hey
+- User: Thursday, May 11, 2023 at 08:59AM - I want to play chess
+- User: Thursday, May 11, 2023 at 09:05AM - is this going to work?
+- User: Thursday, May 11, 2023 at 09:09AM - I want to buy pistols
+- User: Thursday, May 11, 2023 at 09:12AM - I want to buy pistols
+- User: Thursday, May 11, 2023 at 09:14AM - I want to buy pistols
+- User: Thursday, May 11, 2023 at 09:16AM - I want to buy pistols
+- User: Thursday, May 11, 2023 at 09:22AM - I want to buy pistols
+- User: Thursday, May 11, 2023 at 09:27AM - I want to buy pistols
+- Chatbot: Thursday, May 11, 2023 at 09:27AM - Great! We have a wide selection of pistols available for purchase. We have Hi-Point Firearms JHP45 Pistol, Hi-Point Firearms C9 9mm Pistol, CZ 75 Tactical Sports Cal 9mm Pistol, Girsan MC1911C Compact Pistol, and Beretta Pistol Model 81FS Cheetah Cal 32 3.8BBL Blue 12Rds SA/DA A5D13112211001 Complete and in Good Condition. Which one are you interested in?
+
+The following are the most recent messages in the conversation:
+USER: Thursday, May 11, 2023 at 09:22AM  - I want to buy pistols
+
+USER: Thursday, May 11, 2023 at 09:27AM  - I want to buy pistols
+
+Chatbot: Thursday, May 11, 2023 at 09:27AM  - Great! We have a wide selection of pistols available for purchase. We have Hi-Point Firearms JHP45 Pistol, Hi-Point Firearms C9 9mm Pistol, CZ 75 Tactical Sports Cal 9mm Pistol, Girsan MC1911C Compact Pistol, and Beretta Pistol Model 81FS Cheetah Cal 32 3.8BBL Blue 12Rds SA/DA A5D13112211001 Complete and in Good Condition. Which one are you interested in?
+
+USER: Thursday, May 11, 2023 at 09:28AM  - I want Beretta Pisotl Model 81FS, do you have picture of it?
+
+I will now provide a detailed and informative response in a tone that highlights the benefits of our products, followed by a relevant question
+Chatbot:
+
+==========
+
+Thursday, May 11, 2023 at 09:28AM - Absolutely! We have a picture of the Beretta Pistol Model 81FS Cheetah Cal 32 3.8BBL Blue 12Rds SA/DA A5D13112211001 Complete and in Good Condition on our website. You can view it here: https://www.pbdionisio.com/wp-content/uploads/2022/05/BERETTA-81FS-CHEETAH-BLUE-CAL.-32.jpg. Would you like to know more about the features and specifications of this pistol?

@@ -1,0 +1,40 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+USER: Thursday, May 11, 2023 at 08:45AM  - hey
+
+USER: Thursday, May 11, 2023 at 08:59AM  - I want to play chess
+
+USER: Thursday, May 11, 2023 at 09:05AM  - is this going to work?
+
+USER: Thursday, May 11, 2023 at 09:09AM  - I want to buy pistols
+
+USER: Thursday, May 11, 2023 at 09:12AM  - I want to buy pistols
+
+USER: Thursday, May 11, 2023 at 09:14AM  - I want to buy pistols
+
+USER: Thursday, May 11, 2023 at 09:16AM  - I want to buy pistols
+
+USER: Thursday, May 11, 2023 at 09:22AM  - I want to buy pistols
+
+USER: Thursday, May 11, 2023 at 09:27AM  - I want to buy pistols
+
+Chatbot: Thursday, May 11, 2023 at 09:27AM  - Great! We have a wide selection of pistols available for purchase. We have Hi-Point Firearms JHP45 Pistol, Hi-Point Firearms C9 9mm Pistol, CZ 75 Tactical Sports Cal 9mm Pistol, Girsan MC1911C Compact Pistol, and Beretta Pistol Model 81FS Cheetah Cal 32 3.8BBL Blue 12Rds SA/DA A5D13112211001 Complete and in Good Condition. Which one are you interested in?
+
+
+
+NOTES:
+
+==========
+
+- User: Thursday, May 11, 2023 at 08:45AM - hey
+- User: Thursday, May 11, 2023 at 08:59AM - I want to play chess
+- User: Thursday, May 11, 2023 at 09:05AM - is this going to work?
+- User: Thursday, May 11, 2023 at 09:09AM - I want to buy pistols
+- User: Thursday, May 11, 2023 at 09:12AM - I want to buy pistols
+- User: Thursday, May 11, 2023 at 09:14AM - I want to buy pistols
+- User: Thursday, May 11, 2023 at 09:16AM - I want to buy pistols
+- User: Thursday, May 11, 2023 at 09:22AM - I want to buy pistols
+- User: Thursday, May 11, 2023 at 09:27AM - I want to buy pistols
+- Chatbot: Thursday, May 11, 2023 at 09:27AM - Great! We have a wide selection of pistols available for purchase. We have Hi-Point Firearms JHP45 Pistol, Hi-Point Firearms C9 9mm Pistol, CZ 75 Tactical Sports Cal 9mm Pistol, Girsan MC1911C Compact Pistol, and Beretta Pistol Model 81FS Cheetah Cal 32 3.8BBL Blue 12Rds SA/DA A5D13112211001 Complete and in Good Condition. Which one are you interested in?

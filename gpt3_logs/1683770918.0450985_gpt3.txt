@@ -1,0 +1,39 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+USER: Thursday, May 11, 2023 at 09:05AM  - is this going to work?
+
+USER: Thursday, May 11, 2023 at 09:28AM  - I want Beretta Pisotl Model 81FS, do you have picture of it?
+
+Chatbot: Thursday, May 11, 2023 at 09:29AM  - Thursday, May 11, 2023 at 09:28AM - Absolutely! We have a picture of the Beretta Pistol Model 81FS Cheetah Cal 32 3.8BBL Blue 12Rds SA/DA A5D13112211001 Complete and in Good Condition on our website. You can view it here: https://www.pbdionisio.com/wp-content/uploads/2022/05/BERETTA-81FS-CHEETAH-BLUE-CAL.-32.jpg. Would you like to know more about the features and specifications of this pistol?
+
+USER: Thursday, May 11, 2023 at 09:29AM  - yes, I want more information, how much is this?
+
+Chatbot: Thursday, May 11, 2023 at 09:30AM  - Thursday, May 11, 2023 at 09:30AM - The Beretta Pistol Model 81FS Cheetah Cal 32 3.8BBL Blue 12Rds SA/DA A5D13112211001 Complete and in Good Condition is priced at $1,100.00. This pistol is a reliable and accurate firearm that is perfect for self-defense and target shooting. It features a 3.8-inch barrel, a blue finish, and a 12-round magazine capacity. Would you like to know more about the features and specifications of this pistol?
+
+USER: Thursday, May 11, 2023 at 09:32AM  - No that's good enough, I want to buy it now, is it available?
+
+USER: Thursday, May 11, 2023 at 09:37AM  - I have the money now where I can purchase it?
+
+Chatbot: Thursday, May 11, 2023 at 09:37AM  - Thursday, May 11, 2023 at 09:37AM - Thursday, May 11, 2023 at 09:37AM - You can purchase the Beretta Pistol Model 81FS Cheetah Cal 32 3.8BBL Blue 12Rds SA/DA A5D13112211001 Complete and in Good Condition directly from our website at https://www.pbdionisio.com/shop/. This pistol is a reliable and accurate firearm that is perfect for self-defense and target shooting. It features a 3.8-inch barrel, a blue finish, and a 12-round magazine capacity. Would you like to know more about our other payment options and delivery services?
+
+USER: Thursday, May 11, 2023 at 10:03AM  - do you still remember model I asked before because I forgot it?
+
+Chatbot: Thursday, May 11, 2023 at 10:03AM  - Thursday, May 11, 2023 at 10:03AM - Of course! You asked about the Beretta Pistol Model 81FS. We have this model in stock, and you can view photos of it on our website. It is a reliable and accurate pistol, designed with precision and crafted with care. Would you like to know more about its features or specifications?
+
+
+
+NOTES:
+
+==========
+
+- User: Thursday, May 11, 2023 at 09:05AM - Asked if it will work
+- User: Thursday, May 11, 2023 at 09:28AM - Asked for pictures of Beretta Pistol Model 81FS
+- Chatbot: Thursday, May 11, 2023 at 09:29AM - Provided picture of Beretta Pistol Model 81FS and asked if user wanted to know more about features and specs
+- User: Thursday, May 11, 2023 at 09:29AM - Asked how much it was
+- Chatbot: Thursday, May 11, 2023 at 09:30AM - Provided price of Beretta Pistol Model 81FS and asked if user wanted to know more about features and specs
+- User: Thursday, May 11, 2023 at 09:32AM - Declined to know more about features and specs, asked if available to purchase
+- User: Thursday, May 11, 2023 at 09:37AM - Asked where to purchase the Beretta Pistol Model 81FS
+- Chatbot: Thursday, May 11, 2023 at 09:37AM - Provided link to purchase Beretta Pistol Model 81FS and asked if user wanted to know more about payment options and delivery services
+- User: Thursday, May 11, 2023 at 10:03AM - Asked if chatbot still remembered the model previously asked about

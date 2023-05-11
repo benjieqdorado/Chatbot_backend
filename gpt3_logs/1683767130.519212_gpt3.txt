@@ -1,0 +1,28 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+USER: Thursday, May 11, 2023 at 08:45AM  - hey
+
+USER: Thursday, May 11, 2023 at 08:48AM  - hello chatbot
+
+USER: Thursday, May 11, 2023 at 08:51AM  - Good morning
+
+USER: Thursday, May 11, 2023 at 08:57AM  - cls
+
+USER: Thursday, May 11, 2023 at 08:58AM  - I'm going to play chess right now
+
+USER: Thursday, May 11, 2023 at 08:59AM  - I want to play chess
+
+
+
+NOTES:
+
+==========
+
+- User: Thursday, May 11, 2023 at 08:45AM - hey
+- User: Thursday, May 11, 2023 at 08:48AM - hello chatbot
+- User: Thursday, May 11, 2023 at 08:51AM - Good morning
+- User: Thursday, May 11, 2023 at 08:57AM - cls
+- User: Thursday, May 11, 2023 at 08:58AM - I'm going to play chess right now
+- User: Thursday, May 11, 2023 at 08:59AM - I want to play chess
