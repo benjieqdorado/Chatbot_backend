@@ -1,0 +1,40 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER: this is empty file
+
+CUSTOMER: python code sukcs
+
+CUSTOMER: nice
+
+CUSTOMER: hello world
+
+CUSTOMER: ko
+
+CUSTOMER: hello world
+
+CUSTOMER: conversation
+
+CUSTOMER: conversation
+
+CUSTOMER: chatgpt
+
+CUSTOMER: Laptop
+
+
+
+NOTES:
+
+==========
+
+- Customer said the file is empty 
+- Customer said python code sucks 
+- Customer said nice 
+- Customer said hello world 
+- Customer said ko 
+- Customer said hello world again 
+- Customer said conversation 
+- Customer said conversation again 
+- Customer said chatgpt 
+- Customer asked about laptop

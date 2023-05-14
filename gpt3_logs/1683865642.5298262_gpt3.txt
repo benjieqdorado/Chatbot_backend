@@ -1,0 +1,38 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER: nice
+
+CUSTOMER: conversation
+
+CUSTOMER: conversation
+
+CUSTOMER: Laptop
+
+CUSTOMER: do you have python pistols?
+
+CUSTOMER: do you have python pistols?
+
+Chatbot: Friday, May 12, 2023 at 12:24PM  - Hi there! We do not have Python pistols, however, we do have a variety of CZ Scorpion EVO 3 S1 pistols in our inventory. We have regular and FDE models in stock, as well as a 9mm caliber carbine model that is currently out of stock. Are you looking for a pistol for self-defense, sport shooting, or something else?
+
+CUSTOMER: hello
+
+Chatbot: Friday, May 12, 2023 at 12:26PM  - Hi there! Welcome to PBDionisio & Co. We offer a wide variety of guns and accessories for your needs. Are you looking for a pistol for self-defense, sport shooting, or something else?
+
+Chatbot: Friday, May 12, 2023 at 12:26PM  - Friday, May 12, 2023 at 12:27PM - Yes, I remember our last conversation. We discussed the CZ Scorpion EVO 3 S1 pistols, which are great for self-defense and sport shooting. We have regular and FDE models in stock, as well as a 9mm caliber carbine model that is currently out of stock. Would you like to learn more about our other pistol offerings?
+
+
+
+NOTES:
+
+==========
+
+- Customer: nice - Customer was polite and friendly
+- Customer: conversation - Customer was engaging in conversation
+- Customer: laptop - Customer was inquiring about a laptop
+- Customer: do you have python pistols? - Customer was asking if the store had Python pistols
+- Chatbot: Friday, May 12, 2023 at 12:24PM - Chatbot provided information that the store did not have Python pistols, but had CZ Scorpion EVO 3 S1 pistols in regular and FDE models, as well as a 9mm caliber carbine model that was out of stock
+- Customer: hello - Customer was initiating conversation again
+- Chatbot: Friday, May 12, 2023 at 12:26PM - Chatbot welcomed the customer back and inquired about what kind of pistol the customer was looking for
+- Chatbot: Friday, May 12, 2023 at 12:27PM - Chatbot reminded the customer of the conversation regarding the CZ Scorpion EVO 3 S1 pistols and asked if the customer wanted to learn more about other offerings

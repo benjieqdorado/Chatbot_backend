@@ -1,0 +1,39 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+Chatbot: Friday, May 12, 2023 at 12:26PM  - Friday, May 12, 2023 at 12:27PM - Yes, I remember our last conversation. We discussed the CZ Scorpion EVO 3 S1 pistols, which are great for self-defense and sport shooting. We have regular and FDE models in stock, as well as a 9mm caliber carbine model that is currently out of stock. Would you like to learn more about our other pistol offerings?
+
+CUSTOMER: I want a pistols for sport shooting
+
+Chatbot: Friday, May 12, 2023 at 12:27PM  - Friday, May 12, 2023 at 12:27PM - We have a great selection of pistols for sport shooting, including the CZ 75 Tactical Sports and Walther PPK/S. The CZ 75 Tactical Sports is a competition-grade pistol with a steel frame, adjustable sights, and an ergonomic design. The Walther PPK/S is a classic design with a steel frame, fixed sights, and a manual safety. Both pistols are highly accurate and reliable, making them ideal for sport shooting. Which model are you interested in?
+
+Chatbot: Friday, May 12, 2023 at 12:28PM  - Friday, May 12, 2023 at 12:27PM - Friday, May 12, 2023 at 12:27PM - Of course! The CZ 75 Tactical Sports features a steel frame and an adjustable rear sight, making it perfect for sport shooting. Here is an image of the CZ 75 Tactical Sports:
+https://www.pbdionisio.com/wp-content/uploads/2020/09/TS-ORANGE.jpg
+The Walther PPK/S is a classic design with a steel frame and fixed sights, making it a great choice for sport shooting. Here is an image of the Walther PPK/S:
+https://www.pbdionisio.com/wp-content/uploads/2021/08/walther-ppk-s.jpg
+Which of these pistols would you like to learn more about?
+
+CUSTOMER: I want to learn more about CZ 75 Tactical sports
+
+Chatbot: Friday, May 12, 2023 at 12:30PM  - Friday, May 12, 2023 at 12:29PM - The CZ 75 Tactical Sports is a competition-grade pistol that has been used in several shooting competitions around the world. It features a steel frame, adjustable sights, and an ergonomic design, making it perfect for sport shooting. It is also highly accurate and reliable, ensuring that you get the most out of your shooting experience. Would you like to learn more about the features of the CZ 75 Tactical Sports, such as its accuracy and reliability?
+
+Chatbot: Friday, May 12, 2023 at 12:31PM  - Friday, May 12, 2023 at 12:32PM - Of course! The CZ 75 Tactical Sports is renowned for its accuracy and reliability on the range. It features an adjustable rear sight that allows for precise aiming, and its ergonomic design ensures that you stay comfortable while shooting. Additionally, its steel frame construction ensures that it is both durable and reliable. What would you like to know about the other features of the CZ 75 Tactical Sports?
+
+Chatbot: Friday, May 12, 2023 at 12:31PM  - Friday, May 12, 2023 at 12:33PM - You can purchase the CZ 75 Tactical Sports from PBDionisio & Co. We are located at No. 27 Don A. Roces Avenue, Quezon City, Metro Manila. Our store hours are Monday to Friday from 9:00 AM to 5:00 PM, Saturday from 9:00 AM to 1:00 PM, and Sunday closed. You can also view our extensive collection of firearms online at https://www.pbdionisio.com/. All of our products are listed in Philippine Pesos (PHP). Do you need any more information about the CZ 75 Tactical Sports?
+
+Chatbot: Friday, May 12, 2023 at 12:32PM  - Friday, May 12, 2023 at 12:31PM - Friday, May 12, 2023 at 12:34PM - Yes, you can find the CZ 75 Tactical Sports on our website here: https://www.pbdionisio.com/product/cz-rifle-457-cal-22lr-synthetic16bbl-5084-8084-rtamaax. The CZ 75 Tactical Sports is renowned for its accuracy and reliability on the range, and its ergonomic design ensures that you stay comfortable while shooting. Additionally, its steel frame construction ensures that it is both durable and reliable. Would you like to see images of the CZ 75 Tactical Sports?
+
+Chatbot: Friday, May 12, 2023 at 12:34PM  - Friday, May 12, 2023 at 12:34PM - Friday, May 12, 2023 at 12:35PM - You can purchase the CZ 75 Tactical Sports directly from our website here: https://www.pbdionisio.com/product/cz-rifle-457-cal-22lr-synthetic16bbl-5084-8084-rtamaax. This pistol is renowned for its accuracy and reliability on the range, and its ergonomic design ensures that you stay comfortable while shooting. Additionally, its steel frame construction ensures that it is both durable and reliable. Would you like to know more about the features of the CZ 75 Tactical Sports?
+
+
+
+NOTES:
+
+==========
+
+- Chatbot: Friday, May 12, 2023 at 12:26PM - Yes, I remember our last conversation. We discussed the CZ Scorpion EVO 3 S1 pistols, which are great for self-defense and sport shooting. We have regular and FDE models in stock, as well as a 9mm caliber carbine model that is currently out of stock. Would you like to learn more about our other pistol offerings?
+- CUSTOMER: I want a pistols for sport shooting
+- Chatbot: Friday, May 12, 2023 at 12:27PM - We have a great selection of pistols for sport shooting, including the CZ 75 Tactical Sports and Walther PPK/S. The CZ 75 Tactical Sports is a competition-grade pistol with a steel frame, adjustable sights, and an ergonomic design. The Walther PPK/S is a classic design with a steel frame, fixed sights, and a manual safety. Both pistols are highly accurate and reliable, making them ideal for sport shooting. Which model are you interested in?
+- Chatbot: Friday, May 12, 2023 at 12:28PM - Of course! The CZ 75 Tactical Sports features a steel frame and an adjustable rear sight, making it perfect for sport shooting. Here is an image of the CZ 75 Tactical Sports: https://www.pbdionisio.com/wp-content/uploads/2020/09/TS-ORANGE.jpg The Walther PPK/S is a classic design with a steel frame and fixed sights, making it a great choice for sport shooting. Here is an image of the Walther PPK/S: https://www.pbdionisio.com/wp-content/uploads/2021/08/walther-ppk-s.jpg Which of these pistols would you like to learn more about?
+- CUSTOMER: I want to learn more

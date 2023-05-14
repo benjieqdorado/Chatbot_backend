@@ -1,0 +1,36 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER: nice
+
+CUSTOMER: hello world
+
+CUSTOMER: ko
+
+CUSTOMER: hello world
+
+CUSTOMER: conversation
+
+CUSTOMER: conversation
+
+CUSTOMER: it works?
+
+CUSTOMER: hello
+
+CUSTOMER: do you remember the last conversation we had?
+
+CUSTOMER: I can't decide yet can you give images of those you mention
+
+
+
+NOTES:
+
+==========
+
+- Customer said "nice"
+- Customer said "hello world" twice
+- Customer said "ko"
+- Customer asked if conversation was working
+- Customer asked if they remembered the last conversation they had
+- Customer asked for images of products they mentioned

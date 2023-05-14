@@ -1,0 +1,38 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER: python code sukcs
+
+CUSTOMER: nice
+
+CUSTOMER: hello world
+
+CUSTOMER: hello world
+
+CUSTOMER: conversation
+
+CUSTOMER: conversation
+
+CUSTOMER: chatgpt
+
+CUSTOMER: Laptop
+
+CUSTOMER: it works?
+
+CUSTOMER: database
+
+
+
+NOTES:
+
+==========
+
+- Customer states that Python code "sucks".
+- Customer says "nice".
+- Customer states "hello world" twice.
+- Customer inquires about "conversation" twice.
+- Customer inquires about "chatgpt".
+- Customer inquires about a "Laptop".
+- Customer inquires if "it works?".
+- Customer inquires about a "database".

@@ -1,0 +1,39 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER: Laptop
+
+CUSTOMER: it works?
+
+CUSTOMER: hello
+
+Chatbot: Friday, May 12, 2023 at 12:26PM  - Hi there! Welcome to PBDionisio & Co. We offer a wide variety of guns and accessories for your needs. Are you looking for a pistol for self-defense, sport shooting, or something else?
+
+CUSTOMER: I want a pistols for sport shooting
+
+CUSTOMER: I can't decide yet can you give images of those you mention
+
+CUSTOMER: I want to learn more about CZ 75 Tactical sports
+
+CUSTOMER: yes please
+
+CUSTOMER: where I can buy it
+
+CUSTOMER: I'm kind Lazy to got the store do you have direct link I can go to?
+
+
+
+NOTES:
+
+==========
+
+- Customer is looking for a laptop
+- Customer inquires if it works
+- Chatbot greets customer and inquires what type of gun they are looking for
+- Customer is looking for a pistol for sport shooting
+- Customer requests images of the guns mentioned
+- Customer inquires about the CZ 75 Tactical Sports
+- Customer confirms they would like to learn more
+- Customer inquires where they can buy it
+- Customer is looking for a direct link to purchase the gun

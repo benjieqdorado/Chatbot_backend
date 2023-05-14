@@ -1,0 +1,40 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER: nice
+
+CUSTOMER: ko
+
+CUSTOMER: chatgpt
+
+CUSTOMER: Laptop
+
+CUSTOMER: it works?
+
+CUSTOMER: I'm coding right,I'm a programmer
+
+CUSTOMER: hello
+
+CUSTOMER: I can't decide yet can you give images of those you mention
+
+CUSTOMER: yes please
+
+CUSTOMER: where I can buy it
+
+
+
+NOTES:
+
+==========
+
+- Customer is nice.
+- Customer asked "ko".
+- Customer asked "chatgpt".
+- Customer asked about laptop.
+- Customer asked if it works.
+- Customer mentioned they are a programmer.
+- Customer said hello.
+- Customer asked for images of what was mentioned.
+- Customer asked for yes please.
+- Customer asked where to buy it.

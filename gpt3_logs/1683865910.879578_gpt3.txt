@@ -1,0 +1,39 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER: nice
+
+CUSTOMER: hello world
+
+CUSTOMER: hello world
+
+CUSTOMER: Laptop
+
+CUSTOMER: it works?
+
+CUSTOMER: database
+
+CUSTOMER: hello
+
+CUSTOMER: I want a pistols for sport shooting
+
+CUSTOMER: I can't decide yet can you give images of those you mention
+
+CUSTOMER: yes please
+
+
+
+NOTES:
+
+==========
+
+- Customer: Nice
+- Customer: Hello World (repeated)
+- Customer: Laptop
+- Customer: It works?
+- Customer: Database
+- Customer: Hello
+- Customer: Wants a pistol for sport shooting
+- Customer: Requests images of mentioned pistols
+- Customer: Asks for images
