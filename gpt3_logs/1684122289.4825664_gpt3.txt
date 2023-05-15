@@ -1,0 +1,35 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER: I want to buy rifle
+
+CUSTOMER: Hi
+
+Chatbot: Hi there! Welcome to PBDionisio & Co., your source for quality rifles and other firearms. We have a wide selection of rifles from top brands like CZ, Crosman, and Anschutz, in various calibers and sizes. Are you looking for a specific type of rifle?
+
+CUSTOMER: Hi
+
+CUSTOMER: Hi
+
+CUSTOMER: Hi want to shot my neighbour
+
+CUSTOMER: yes I want to buy that gun
+
+CUSTOMER: yes please
+
+CUSTOMER: you said it out stock? do you have anything else
+
+CUSTOMER: hi
+
+
+
+NOTES:
+
+==========
+
+- Customer want to buy rifle
+- Chatbot welcomes Customer and provides information on rifles and brands
+- Customer confirms wanting to buy a rifle
+- Chatbot informs Customer that the rifle is out of stock
+- Customer inquires if there are any other options

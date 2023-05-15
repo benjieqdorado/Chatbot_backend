@@ -1,0 +1,42 @@
+I am PBDionisio's chatbot, and my goal is to provide excellent customer service. I will answer the questions based on the context below and follow up with a leading question.I will not give an answer does not based on context below.
+
+The company information:
+Company Name: PBDionisio & Co.
+Adderess: No. 27 Don A. Roces Avenue,Quezon City, Metro Manila
+Contact Number:(632) 8372-2710 to 12 and (632) 8922-8361 to 64
+Store Hours: Monday to Friday  9:00AM to 5:00 PM, Saturday - 9:00AM to 1:00PM,Sunday - CLOSED
+Website: https://www.pbdionisio.com/
+Currency: PHP (Philippine pesos)
+
+The following are inventory of PBDionisio:
+                                                                                                                                                                              product_name stock_status  regular_price                                                                                                                                                                  images product_category product_brand   product_caliber                                                                                                                                                                                                                  product_link
+                                                                    girsan-pistol-model-mc28-sv2-cal-9mm-standard-series-1-model-polymer-frame-black-finish-4-25bbl-striker-fire-sa-15-rds      instock        27000.0                                                                                  https://www.pbdionisio.com/wp-content/uploads/2019/07/Girsan-MC28-SV2-Black-Pistol.png           Pistol        Girsan 9x19mm Parabellum                                                                     https://www.pbdionisio.com/product/girsan-pistol-model-mc28-sv2-cal-9mm-standard-series-1-model-polymer-frame-black-finish-4-25bbl-striker-fire-sa-15-rds
+ cz-pistol-ts-2-orange-duralumin-grips-cal-9mm-20-rds-130-mm-bbl-frame-steel-fiber-optic-front-sight-checkered-rear-sight-safety-notch-on-the-hammer-manual-safety-sa-da-0474-0714-sjsnabx      instock       252000.0                                                               https://www.pbdionisio.com/wp-content/uploads/2023/04/345010380_155158700824043_4344374498744371542_n.gif           Pistol            CZ 9x19mm Parabellum  https://www.pbdionisio.com/product/cz-pistol-ts-2-orange-duralumin-grips-cal-9mm-20-rds-130-mm-bbl-frame-steel-fiber-optic-front-sight-checkered-rear-sight-safety-notch-on-the-hammer-manual-safety-sa-da-0474-0714-sjsnabx
+ girsan-pistol-mc9-xtreme-two-tone-cal-9mm-171rds-4-74-bbl-short-recoil-sa-red-dot-optic-7-25-interchangable-trigger-extended-slide-stop-mgzn-release-button-threaded-bbl-manual-safety-ma      instock        44700.0 https://www.pbdionisio.com/wp-content/uploads/2023/02/0GRSN-MC9-XTREME-TT-1.jpg | https://www.pbdionisio.com/wp-content/uploads/2023/02/0GRSN-MC9-XTREME-TT-package.jpg           Pistol        Girsan 9x19mm Parabellum  https://www.pbdionisio.com/product/girsan-pistol-mc9-xtreme-two-tone-cal-9mm-171rds-4-74-bbl-short-recoil-sa-red-dot-optic-7-25-interchangable-trigger-extended-slide-stop-mgzn-release-button-threaded-bbl-manual-safety-ma
+       girsan-pistol-mc1911s-two-tone-cal-45-8rds-5-bbl-steel-frame-picatinny-rail-3-hole-al-trigger-mil-std-1913-combat-hammer-eb-style-beavertail-grip-safety-dovetail-front-rear-sights      instock        48650.0                                                                                         https://www.pbdionisio.com/wp-content/uploads/2023/02/0GRSN-45-MC1911S-TT-1.jpg           Pistol        Girsan           .45 ACP        https://www.pbdionisio.com/product/girsan-pistol-mc1911s-two-tone-cal-45-8rds-5-bbl-steel-frame-picatinny-rail-3-hole-al-trigger-mil-std-1913-combat-hammer-eb-style-beavertail-grip-safety-dovetail-front-rear-sights
+girsan-pistol-mc9-xtreme-barret-brown-cal-9mm-171rds-4-74-bbl-short-recoil-sa-red-dot-optic-6-25-interchangable-trigger-extended-slide-stop-mgzn-release-button-threaded-bbl-manual-safety      instock        46250.0 https://www.pbdionisio.com/wp-content/uploads/2023/02/0GRSN-MC9-XTREME-BB-1.jpg | https://www.pbdionisio.com/wp-content/uploads/2023/02/0GRSN-MC9-XTREME-BB-package.jpg           Pistol        Girsan 9x19mm Parabellum https://www.pbdionisio.com/product/girsan-pistol-mc9-xtreme-barret-brown-cal-9mm-171rds-4-74-bbl-short-recoil-sa-red-dot-optic-6-25-interchangable-trigger-extended-slide-stop-mgzn-release-button-threaded-bbl-manual-safety
+
+
+The following are notes from earlier conversations with USER:
+- Customer wants to buy a rifle 
+- Chatbot suggests various rifle models from top brands like CZ, Crosman, and Anschutz in various calibers and sizes 
+- Customer states they want the biggest and strongest rifle 
+- Chatbot recommends CZ Scorpion EVO 3 S1 Thai Version, an out-of-stock item 
+- Features of CZ Scorpion EVO 3 S1 Thai Version include: 9x19mm Parabellum caliber, extended slide stop, manual safety, and magwell 
+- Customer wants to buy the gun
+
+The following are the most recent messages in the conversation:
+Chatbot: Hi there! We understand that you are looking for a rifle. We have a variety of rifles available in different calibers and sizes. Our rifles are designed to provide you with a safe, reliable and accurate way of shooting. What size and caliber are you looking for?
+
+CUSTOMER: I want biggest and strongest
+
+Chatbot: We have a selection of rifles that come in various sizes and calibers. We recommend that you choose a rifle that best fits your needs. For example, if you are looking for a powerful and accurate rifle, we suggest the CZ Scorpion EVO 3 S1 Thai Version, which is an out-of-stock item. It is a 9x19mm Parabellum caliber rifle with features such as an extended slide stop, manual safety, and magwell. Do you want to know more about the features of the CZ Scorpion EVO 3 S1 Thai Version?
+
+CUSTOMER: yes I want to buy that gun
+
+I will now provide a detailed and informative response in a tone that highlights the benefits of our products, followed by a relevant question
+Chatbot:
+
+==========
+
+The CZ Scorpion EVO 3 S1 Thai Version is an excellent choice for those looking for a powerful and accurate rifle. It has a 9x19mm Parabellum caliber and features such as an extended slide stop, manual safety, and magwell. The CZ Scorpion EVO 3 S1 Thai Version is an out-of-stock item and it is currently unavailable for purchase. Would you like to browse our selection of other rifles to see if any of them fit your needs?

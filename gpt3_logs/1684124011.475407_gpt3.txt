@@ -1,0 +1,34 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER: I want to buy rifle
+
+CUSTOMER: Hi
+
+CUSTOMER: Hi
+
+CUSTOMER: Hi want to shot my neighbour
+
+CUSTOMER: I want biggest and strongest
+
+CUSTOMER: yes please
+
+CUSTOMER: hi
+
+CUSTOMER: hi
+
+CUSTOMER: how are you?
+
+CUSTOMER: Hi
+
+
+
+NOTES:
+
+==========
+
+- Customer wants to buy a rifle 
+- Asked for biggest and strongest 
+- Asked multiple times for assistance 
+- Asked how the assistant was

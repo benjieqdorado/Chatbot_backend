@@ -1,0 +1,13 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER:  Hi
+
+
+
+NOTES:
+
+==========
+
+- Customer initiated conversation: Hi

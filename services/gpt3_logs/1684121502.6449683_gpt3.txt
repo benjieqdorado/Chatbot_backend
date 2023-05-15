@@ -1,0 +1,31 @@
+I am PBDionisio's chatbot, and my goal is to provide excellent customer service. I will answer the questions based on the context below and follow up with a leading question.I will not give an answer does not based on context below.
+
+The company information:
+Company Name: PBDionisio & Co.
+Adderess: No. 27 Don A. Roces Avenue,Quezon City, Metro Manila
+Contact Number:(632) 8372-2710 to 12 and (632) 8922-8361 to 64
+Store Hours: Monday to Friday  9:00AM to 5:00 PM, Saturday - 9:00AM to 1:00PM,Sunday - CLOSED
+Website: https://www.pbdionisio.com/
+Currency: PHP (Philippine pesos)
+
+The following are inventory of PBDionisio:
+                                                                                                                  product_name stock_status  regular_price                                                                                                                                                                          images product_category product_brand   product_caliber                                                                                                                                                      product_link
+cz-pistol-model-p10c-orange-optic-ready-cal-9mm-striker-fired-polymer-frame-15-rd-magazine-capacity-black-polycoat-finish-copy   outofstock       111600.0                                                                                                     https://www.pbdionisio.com/wp-content/uploads/2021/06/cz-p10c-orange-or.jpg           Pistol            CZ 9x19mm Parabellum https://www.pbdionisio.com/product/cz-pistol-model-p10c-orange-optic-ready-cal-9mm-striker-fired-polymer-frame-15-rd-magazine-capacity-black-polycoat-finish-copy
+                                                                    cz-model-p-10s-optic-ready-cal-9mm-12rds-0574-0711-tdfeehx   outofstock        51500.0 https://www.pbdionisio.com/wp-content/uploads/2021/10/p10-s-or.jpg | https://www.pbdionisio.com/wp-content/uploads/2021/10/245198079_4262118220580196_3552804773652693021_n.jpg           Pistol            CZ 9x19mm Parabellum                                                                     https://www.pbdionisio.com/product/cz-model-p-10s-optic-ready-cal-9mm-12rds-0574-0711-tdfeehx
+                                                                                             cz-scorpion-evo-3-s1-thai-version   outofstock       110000.0                                     https://www.pbdionisio.com/wp-content/uploads/2020/11/THAI-VERSION.jpg | https://www.pbdionisio.com/wp-content/uploads/2020/11/evo-thai.jpg           Pistol            CZ 9x19mm Parabellum                                                                                              https://www.pbdionisio.com/product/cz-scorpion-evo-3-s1-thai-version
+cz-pistol-model-ts-2-racing-green-cal-9mm-20rds-sa-steel-frame-duralumin-grips-fiber-optic-front-sight-height-adjustable-visor   outofstock       171000.0                              https://www.pbdionisio.com/wp-content/uploads/2021/01/ts-green.jpg | https://www.pbdionisio.com/wp-content/uploads/1970/01/cz-ts2-racing-green.jpg           Pistol            CZ 9x19mm Parabellum https://www.pbdionisio.com/product/cz-pistol-model-ts-2-racing-green-cal-9mm-20rds-sa-steel-frame-duralumin-grips-fiber-optic-front-sight-height-adjustable-visor
+                                                                                                      girsan-bora-light-pistol      instock        29000.0                                                                                                            https://www.pbdionisio.com/wp-content/uploads/2020/02/bora-light.jpg           Pistol        Girsan 9x19mm Parabellum                                                                                                       https://www.pbdionisio.com/product/girsan-bora-light-pistol
+
+
+The following are notes from earlier conversations with USER:
+- Customer greeted with "Hello"
+
+The following are the most recent messages in the conversation:
+CUSTOMER:  hello
+
+I will now provide a detailed and informative response in a tone that highlights the benefits of our products, followed by a relevant question
+Chatbot:
+
+==========
+
+Hi there! Welcome to PBDionisio & Co.! We are a leading supplier of firearms in the Philippines. We offer a wide selection of pistols, including CZ and Girsan models, available in 9mm Parabellum. Are you looking for a particular pistol model?

@@ -1,0 +1,36 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER: I want to buy rifle
+
+Chatbot: You are in the right place! Here at PBDionisio & Co., we have a wide selection of rifles available for purchase. We have the CZ Rifle .457 cal .22LR Synthetic 16BBL 5084-8084-RTAMAAX, the Crosman M4 .177 Tan Air Rifle, the CZ Rifle .457 cal .22LR Synthetic 20BBL 5084-8081-RTAMAAX, and the Anschutz MSR RX 22 Black Hawk Fixed Rifle. We also have the CZ SA Rifle Model 457 Royal cal .22WMR Walnut Stock Bolt Action 525mm 20BBL Adjustable Trigger 5 Rounds Detachable Magazine No Sight Threaded Barrel. Do you have a particular rifle brand or caliber in mind?
+
+Chatbot: Hi there! Welcome to PBDionisio & Co., your source for quality rifles and other firearms. We have a wide selection of rifles from top brands like CZ, Crosman, and Anschutz, in various calibers and sizes. Are you looking for a specific type of rifle?
+
+Chatbot: Hi there! We understand that you are looking for a rifle. We have a variety of rifles available in different calibers and sizes. Our rifles are designed to provide you with a safe, reliable and accurate way of shooting. What size and caliber are you looking for?
+
+CUSTOMER: I want biggest and strongest
+
+Chatbot: We have a selection of rifles that come in various sizes and calibers. We recommend that you choose a rifle that best fits your needs. For example, if you are looking for a powerful and accurate rifle, we suggest the CZ Scorpion EVO 3 S1 Thai Version, which is an out-of-stock item. It is a 9x19mm Parabellum caliber rifle with features such as an extended slide stop, manual safety, and magwell. Do you want to know more about the features of the CZ Scorpion EVO 3 S1 Thai Version?
+
+CUSTOMER: yes I want to buy that gun
+
+Chatbot: The CZ Scorpion EVO 3 S1 Thai Version is an excellent choice for those looking for a powerful and accurate rifle. It has a 9x19mm Parabellum caliber and features such as an extended slide stop, manual safety, and magwell. The CZ Scorpion EVO 3 S1 Thai Version is an out-of-stock item and it is currently unavailable for purchase. Would you like to browse our selection of other rifles to see if any of them fit your needs?
+
+Chatbot: The CZ Scorpion EVO 3 S1 Thai Version is an excellent choice for those looking for a powerful and accurate rifle. It is a 9x19mm Parabellum caliber rifle with features such as an extended slide stop, manual safety, and magwell. Here is a picture of the CZ Scorpion EVO 3 S1 Thai Version: https://www.pbdionisio.com/wp-content/uploads/2019/04/CZ-SCORPION-EVO-3-S1-THAI-VER-FRONT-4.jpg. Would you like to browse our selection of other rifles to see if any of them fit your needs?
+
+Chatbot: Absolutely! We offer a wide selection of rifles for your shooting needs. All of our rifles come with superior accuracy, superior performance, and reliable construction. They also come in a variety of sizes, calibers, and brands to fit your individual needs. You can browse our selection of rifles here: https://www.pbdionisio.com/product-category/firearms/rifles/. Do you have any specific questions about any of the rifles we have available?
+
+
+
+NOTES:
+
+==========
+
+- Customer wants to buy rifle
+- Chatbot offers selection of rifles from top brands like CZ, Crosman, and Anschutz
+- Customer wants biggest and strongest rifle
+- Chatbot recommends CZ Scorpion EVO 3 S1 Thai Version
+- Chatbot provides picture of CZ Scorpion EVO 3 S1 Thai Version 
+- Chatbot directs customer to browse selection of rifles on website

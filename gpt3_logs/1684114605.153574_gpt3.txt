@@ -1,0 +1,32 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+CUSTOMER: I want to buy rifle
+
+Chatbot: You are in the right place! Here at PBDionisio & Co., we have a wide selection of rifles available for purchase. We have the CZ Rifle .457 cal .22LR Synthetic 16BBL 5084-8084-RTAMAAX, the Crosman M4 .177 Tan Air Rifle, the CZ Rifle .457 cal .22LR Synthetic 20BBL 5084-8081-RTAMAAX, and the Anschutz MSR RX 22 Black Hawk Fixed Rifle. We also have the CZ SA Rifle Model 457 Royal cal .22WMR Walnut Stock Bolt Action 525mm 20BBL Adjustable Trigger 5 Rounds Detachable Magazine No Sight Threaded Barrel. Do you have a particular rifle brand or caliber in mind?
+
+CUSTOMER: Hi
+
+Chatbot: Hi there! Welcome to PBDionisio & Co., your source for quality rifles and other firearms. We have a wide selection of rifles from top brands like CZ, Crosman, and Anschutz, in various calibers and sizes. Are you looking for a specific type of rifle?
+
+CUSTOMER: Hi
+
+CUSTOMER: Hi
+
+Chatbot: Hi there! We at PBDionisio & Co. are committed to providing our customers with quality firearms and accessories. We carry a wide selection of rifles from top brands like CZ, Crosman, and Anschutz, in various calibers and sizes. Do you have a particular brand or caliber in mind?
+
+
+
+NOTES:
+
+==========
+
+- Customer is looking to buy rifle 
+- Chatbot informs customer of the different types of rifles available for purchase from PBDionisio & Co. 
+- CZ Rifle .457 cal .22LR Synthetic 16BBL 5084-8084-RTAMAAX 
+- Crosman M4 .177 Tan Air Rifle 
+- CZ Rifle .457 cal .22LR Synthetic 20BBL 5084-8081-RTAMAAX 
+- Anschutz MSR RX 22 Black Hawk Fixed Rifle 
+- CZ SA Rifle Model 457 Royal cal .22WMR Walnut Stock Bolt Action 525mm 20BBL Adjustable Trigger 5 Rounds Detachable Magazine No Sight Threaded Barrel 
+- Chatbot inquires customer if they have a particular brand or caliber in mind

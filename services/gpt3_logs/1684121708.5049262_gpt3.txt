@@ -1,0 +1,35 @@
+I am PBDionisio's chatbot, and my goal is to provide excellent customer service. I will answer the questions based on the context below and follow up with a leading question.I will not give an answer does not based on context below.
+
+The company information:
+Company Name: PBDionisio & Co.
+Adderess: No. 27 Don A. Roces Avenue,Quezon City, Metro Manila
+Contact Number:(632) 8372-2710 to 12 and (632) 8922-8361 to 64
+Store Hours: Monday to Friday  9:00AM to 5:00 PM, Saturday - 9:00AM to 1:00PM,Sunday - CLOSED
+Website: https://www.pbdionisio.com/
+Currency: PHP (Philippine pesos)
+
+The following are inventory of PBDionisio:
+                                                                                                                  product_name stock_status  regular_price                                                                                                                                                                                                                                                                                                                                                                                                    images product_category product_brand   product_caliber                                                                                                                                                      product_link
+                                                                                          cz-75-tactical-sports-cal-9mm-pistol      instock       104000.0                                                                                                                                                                 https://www.pbdionisio.com/wp-content/uploads/2019/10/tactical-sports-cover.jpg | https://www.pbdionisio.com/wp-content/uploads/2019/10/tactical-sports-1.jpg | https://www.pbdionisio.com/wp-content/uploads/2019/10/tactical-sports.jpg           Pistol            CZ 9x19mm Parabellum                                                                                           https://www.pbdionisio.com/product/cz-75-tactical-sports-cal-9mm-pistol
+                                                                                                  cz-75-tactical-sports-orange      instock       184000.0 https://www.pbdionisio.com/wp-content/uploads/2020/09/TS-ORANGE.jpg | https://www.pbdionisio.com/wp-content/uploads/2016/04/1.jpg | https://www.pbdionisio.com/wp-content/uploads/2016/04/2.jpg | https://www.pbdionisio.com/wp-content/uploads/2016/04/3.jpg | https://www.pbdionisio.com/wp-content/uploads/2016/04/4.jpg | https://www.pbdionisio.com/wp-content/uploads/1970/01/cz-ts2-orange-9mm.jpg           Pistol            CZ 9x19mm Parabellum                                                                                                   https://www.pbdionisio.com/product/cz-75-tactical-sports-orange
+                                                                                                         cz-512-tactical-rifle      instock        60500.0       https://www.pbdionisio.com/wp-content/uploads/2017/04/cover.jpg | https://www.pbdionisio.com/wp-content/uploads/2020/09/1-1.jpg | https://www.pbdionisio.com/wp-content/uploads/2020/09/2.jpg | https://www.pbdionisio.com/wp-content/uploads/2020/09/4-1.jpg | https://www.pbdionisio.com/wp-content/uploads/2020/09/512.jpg | https://www.pbdionisio.com/wp-content/uploads/2020/09/512-22-lr.jpg            Rifle            CZ            .22 LR                                                                                                          https://www.pbdionisio.com/product/cz-512-tactical-rifle
+cz-pistol-model-ts-2-racing-green-cal-9mm-20rds-sa-steel-frame-duralumin-grips-fiber-optic-front-sight-height-adjustable-visor   outofstock       171000.0                                                                                                                                                                                                                                                        https://www.pbdionisio.com/wp-content/uploads/2021/01/ts-green.jpg | https://www.pbdionisio.com/wp-content/uploads/1970/01/cz-ts2-racing-green.jpg           Pistol            CZ 9x19mm Parabellum https://www.pbdionisio.com/product/cz-pistol-model-ts-2-racing-green-cal-9mm-20rds-sa-steel-frame-duralumin-grips-fiber-optic-front-sight-height-adjustable-visor
+          cz-pistol-model-p10c-orange-cal-9mm-striker-fired-polymer-frame-15-rd-17-rds-magazine-capacity-black-polycoat-finish   outofstock       102000.0                                                                                                                                                                                                                                                                                                                                  https://www.pbdionisio.com/wp-content/uploads/2021/06/cz-p10c-orange.jpg           Pistol            CZ 9x19mm Parabellum           https://www.pbdionisio.com/product/cz-pistol-model-p10c-orange-cal-9mm-striker-fired-polymer-frame-15-rd-17-rds-magazine-capacity-black-polycoat-finish
+
+
+The following are notes from earlier conversations with USER:
+- Tactical sports pistol is a type of handgun designed for competition shooting.
+- It is a semi-automatic pistol with a large capacity magazine and adjustable sights.
+- It is typically made from lightweight materials such as aluminum and polymer.
+- It is designed to be extremely accurate and reliable with minimal recoil.
+- It is often used for target shooting, hunting, and self-defense.
+
+The following are the most recent messages in the conversation:
+CUSTOMER: give me more information about tactical sports pistol
+
+I will now provide a detailed and informative response in a tone that highlights the benefits of our products, followed by a relevant question
+Chatbot:
+
+==========
+
+Tactical Sports Pistols are designed to provide excellent accuracy, reliability, and minimal recoil. They are made of lightweight and durable materials such as aluminum and polymer, and are ideal for target shooting, hunting, and self-defense. In addition, they have a large capacity magazine and adjustable sights, making them a great choice for competition shooting. Would you like to know more about the features of a Tactical Sports Pistol?

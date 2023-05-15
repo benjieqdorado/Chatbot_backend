@@ -13,8 +13,8 @@ import re
 import sqlite3
 import pickle
 from datetime import datetime
+import vdblite
 # load_dotenv()
-import threading
 
 # openai.api_key = os.getenv('OPENAI_API_KEY')
 with open('openaiapikey.txt', 'r') as infile:
@@ -99,40 +99,6 @@ def save_json(filepath, payload):
     with open(filepath, 'w', encoding='utf-8') as outfile:
         json.dump(payload, outfile, ensure_ascii=False, sort_keys=True, indent=2)
 
-def load_convo(cur):
-    cur.execute("SELECT id, role, timestamp, message, vector FROM chat_log")
-    rows = cur.fetchall()
-    log_list = []
-    for log in rows:
-        log_dict = {
-            'id': log[0],
-            'role': log[1],
-            'timestamp': log[2],
-            'message': log[3],
-            'vector': pickle.loads(log[4])
-        }
-        log_list.append(log_dict)
-    return log_list
-
-
-def fetch_memories(vector, logs, count):
-    scores = []
-
-    for log in logs:
-
-        if vector == log['vector']:
-            # skip this one because it is the same message
-            continue
-        score = similarity(log['vector'], vector)
-        log['score'] = score
-        scores.append(log)
-    ordered = sorted(scores, key=lambda d: d['score'], reverse=True)
-    # TODO - pick more memories temporally nearby the top most relevant memories
-    try:
-        ordered = ordered[0:count]
-        return ordered
-    except:
-        return ordered
     
 
 def gpt3_completion(prompt, engine='text-davinci-003', temp=0.7, top_p=1.0, tokens=400, freq_pen=0.0, pres_pen=0.0, stop=['Customer:', 'Chatbot:']):
@@ -200,13 +166,12 @@ def summarize_memories(memories):
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     timestamp_str = ','.join(map(str, timestamps))
     chatlogs_ids = ','.join(map(str, identifiers))
-    vector_blob = pickle.dumps(vector)
-    conn = sqlite3.connect('chatbot.db')
-    cur = conn.cursor()
-    cur.execute("INSERT INTO notes VALUES (?, ?, ?, ?, ?, ?)",
-                (notes_id, notes, timestamp, timestamp_str, chatlogs_ids, vector_blob))
-    conn.commit()
-    conn.close()
+
+    vdb = vdblite.Vdb()
+
+    info = {'vector': vector, 'id': notes_id,'timestamp':timestamp,'timestamp_str':timestamp_str,'chatlogs_ids':chatlogs_ids, 'notes':notes}
+    vdb.add(info)
+    vdb.save('my_data.vdb')
 
     return notes
 
@@ -221,63 +186,44 @@ def get_last_messages(conversation, limit):
     output = output.strip()
     return output
  
-def summarize_memories_background(memories):
-    # Summarize memories
-    result = summarize_memories(memories)
-    # Insert notes into database
-    # ...
-    return result
+
 def ask_chatgpt_question(question):
     # Connect to database
-    conn = sqlite3.connect('chatbot.db')
-    cur = conn.cursor()
-
-
+    vdb = vdblite.Vdb()
+   
     # Insert customer's message into chat_log table
     timestamp = time()
     message = f"CUSTOMER: {question}"
-    vector_blob = pickle.dumps(gpt3_embedding(question))
-    cur.execute("INSERT INTO chat_log VALUES (?, ?, ?, ?, ?)",
-                (str(uuid4()), 'customer', timestamp, message, vector_blob))
-    conn.commit()
-
-    # Load conversation
-    conversation = load_convo(cur)
+    vector = gpt3_embedding(question)
+    info = {'vector': vector, 'timestamp': timestamp, 'id': str(uuid4()),'role':'customer','message':message}
+    vdb.add(info)
+    vdb.save('my_data.vdb')
 
     # Fetch and summarize memories
-    memories = fetch_memories(gpt3_embedding(question), conversation, 10)
-    # notes = summarize_memories(memories)
-    notes_thread = threading.Thread(target=summarize_memories, args=(memories,))
-    notes_thread.start()
-
+    memories = vdb.search(gpt3_embedding(question), 'vector', 10)
+    notes = summarize_memories(memories)
     # Fetch recent messages and inventory
-    recent = get_last_messages(conversation, 4)
+    recent = get_last_messages(memories, 4)
     df = pd.read_csv("data/pbd-inventory-published-embeded.csv")
     df["embedding"] = df.embedding.apply(eval).apply(np.array)
     inventory = fetch_inventory(df, question, 5)
     
     # Generate response
-    # prompt = open_file('prompt_response.txt').replace('<<INVENTORY>>', inventory).replace('<<NOTES>>', notes).replace('<<CONVERSATION>>', recent)
-    # Generate response
-    prompt = open_file('prompt_response.txt').replace('<<INVENTORY>>', inventory).replace('<<CONVERSATION>>', recent)
-    # Wait for the notes thread to finish and get the result
-    notes_thread.join()
-    notes = notes_thread.result()
-
-    prompt = prompt.replace('<<NOTES>>', notes)
-
+    prompt = open_file('prompt_response.txt').replace('<<INVENTORY>>', inventory).replace('<<NOTES>>', notes).replace('<<CONVERSATION>>', recent)
     output = gpt3_completion(prompt)
 
     # Insert chatbot's message into chat_log table
     timestamp = time()
     message = f"Chatbot: {output}"
-    vector_blob = pickle.dumps(gpt3_embedding(output))
-    cur.execute("INSERT INTO chat_log VALUES (?, ?, ?, ?, ?)",
-                (str(uuid4()), 'chatbot', timestamp, message, vector_blob))
-    conn.commit()
-
-    # Close database connection
-    conn.close()
+    vector = gpt3_embedding(output)
+    info = {'vector': vector, 'timestamp': timestamp, 'id': str(uuid4()),'role':'chatbot','message':message}
 
     # Return output
     return output
+
+
+# if __name__ == '__main__':
+#  while True:
+#   user_input = input('User:')
+#   result = ask_chatgpt_question(user_input)
+#   print('Chatbot: ' + result)
