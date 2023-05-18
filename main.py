@@ -3,7 +3,7 @@ from flask_restful import Api, Resource
 import pprint
 from flask_cors import CORS
 from shared.constant import Constant
-from services.ChatGPT import ask_chatgpt_question
+from services.ChatGPT import ask_chatgpt_question,get_chat_messages
 import datetime
 import time
 
@@ -19,9 +19,9 @@ pp = pprint.PrettyPrinter(indent=4)
 ###############################
 
 
-# @app.route(CONSTANTS.URLS['CHATGPT_QUESTION'], methods=['GET'])
-# def get():
-#     return chatgpt.get_chat_messages()
+@app.route(CONSTANTS.URLS['CHATGPT_QUESTION'], methods=['GET'])
+def get():
+    return get_chat_messages()
 
 
 @app.route(CONSTANTS.URLS['CHATGPT_QUESTION'], methods=['POST'])
@@ -35,6 +35,7 @@ def askQuestion():
     time_str = datetime.timedelta(seconds=int(round(time_elapsed)))
     
     return jsonify({'result': response, 'time_response': str(time_str)})
+  
 
 
 ###############################

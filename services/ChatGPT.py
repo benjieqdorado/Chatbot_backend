@@ -14,8 +14,7 @@ import sqlite3
 import pickle
 from datetime import datetime
 # load_dotenv()
-import threading
-
+import vdblite
 # openai.api_key = os.getenv('OPENAI_API_KEY')
 with open('openaiapikey.txt', 'r') as infile:
     openai.api_key = infile.read()
@@ -115,7 +114,7 @@ def load_convo(cur):
     return log_list
 
 
-def fetch_memories(vector, logs, count):
+async def fetch_memories(vector, logs, count):
     scores = []
 
     for log in logs:
@@ -151,12 +150,12 @@ def gpt3_completion(prompt, engine='text-davinci-003', temp=0.7, top_p=1.0, toke
                 presence_penalty=pres_pen,
                 stop=stop)
             text = response['choices'][0]['text'].strip()
-            text = re.sub('[\r\n]+', '\n', text)
-            text = re.sub('[\t ]+', ' ', text)
-            filename = '%s_gpt3.txt' % time()
-            if not os.path.exists('gpt3_logs'):
-                os.makedirs('gpt3_logs')
-            save_file('gpt3_logs/%s' % filename, prompt + '\n\n==========\n\n' + text)
+            # text = re.sub('[\r\n]+', '\n', text)
+            # text = re.sub('[\t ]+', ' ', text)
+            # filename = '%s_gpt3.txt' % time()
+            # if not os.path.exists('gpt3_logs'):
+            #     os.makedirs('gpt3_logs')
+            # save_file('gpt3_logs/%s' % filename, prompt + '\n\n==========\n\n' + text)
             return text
         except Exception as oops:
             retry += 1
@@ -195,18 +194,18 @@ def summarize_memories(memories):
     notes = gpt3_completion(prompt)
 
     # Save notes and metadata to database
-    vector = gpt3_embedding(message_block)
-    notes_id = str(uuid4())
-    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    timestamp_str = ','.join(map(str, timestamps))
-    chatlogs_ids = ','.join(map(str, identifiers))
-    vector_blob = pickle.dumps(vector)
-    conn = sqlite3.connect('chatbot.db')
-    cur = conn.cursor()
-    cur.execute("INSERT INTO notes VALUES (?, ?, ?, ?, ?, ?)",
-                (notes_id, notes, timestamp, timestamp_str, chatlogs_ids, vector_blob))
-    conn.commit()
-    conn.close()
+    # vector = gpt3_embedding(message_block)
+    # notes_id = str(uuid4())
+    # timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    # timestamp_str = ','.join(map(str, timestamps))
+    # chatlogs_ids = ','.join(map(str, identifiers))
+    # vector_blob = pickle.dumps(vector)
+    # conn = sqlite3.connect('chatbot.db')
+    # cur = conn.cursor()
+    # cur.execute("INSERT INTO notes VALUES (?, ?, ?, ?, ?, ?)",
+    #             (notes_id, notes, timestamp, timestamp_str, chatlogs_ids, vector_blob))
+    # conn.commit()
+    # conn.close()
 
     return notes
 
@@ -217,67 +216,56 @@ def get_last_messages(conversation, limit):
         short = conversation
     output = ''
     for i in short:
-        output += '%s\n\n' % i['message']
+        output += '%s: %s\n\n' % (i['role'], i['message'])  # Added role before the message
     output = output.strip()
     return output
+
  
-def summarize_memories_background(memories):
-    # Summarize memories
-    result = summarize_memories(memories)
-    # Insert notes into database
-    # ...
-    return result
+
+vdb = vdblite.Vdb()
+# vdb.load('my_data.vdb') or 
+
 def ask_chatgpt_question(question):
-    # Connect to database
-    conn = sqlite3.connect('chatbot.db')
-    cur = conn.cursor()
-
-
     # Insert customer's message into chat_log table
     timestamp = time()
-    message = f"CUSTOMER: {question}"
-    vector_blob = pickle.dumps(gpt3_embedding(question))
-    cur.execute("INSERT INTO chat_log VALUES (?, ?, ?, ?, ?)",
-                (str(uuid4()), 'customer', timestamp, message, vector_blob))
-    conn.commit()
-
-    # Load conversation
-    conversation = load_convo(cur)
-
-    # Fetch and summarize memories
-    memories = fetch_memories(gpt3_embedding(question), conversation, 10)
-    # notes = summarize_memories(memories)
-    notes_thread = threading.Thread(target=summarize_memories, args=(memories,))
-    notes_thread.start()
-
+    vector = gpt3_embedding(question)
+    info = {'id': str(uuid4()), 'role': 'user', 'timestamp': timestamp, 'message':question ,'vector':vector}
+    vdb.add(info)
+    vdb.details()
+    vdb.save('my_data.vdb')
+    conversation = vdb.search(vector, 'vector', 10)
+    notes = summarize_memories(conversation)
     # Fetch recent messages and inventory
-    recent = get_last_messages(conversation, 4)
+    recent = get_last_messages(vdb.fetchAll(), 5)
     df = pd.read_csv("data/pbd-inventory-published-embeded.csv")
     df["embedding"] = df.embedding.apply(eval).apply(np.array)
-    inventory = fetch_inventory(df, question, 5)
-    
+    inventory = fetch_inventory(df, question, 3)
+   
+    recent = question
     # Generate response
-    # prompt = open_file('prompt_response.txt').replace('<<INVENTORY>>', inventory).replace('<<NOTES>>', notes).replace('<<CONVERSATION>>', recent)
-    # Generate response
-    prompt = open_file('prompt_response.txt').replace('<<INVENTORY>>', inventory).replace('<<CONVERSATION>>', recent)
-    # Wait for the notes thread to finish and get the result
-    notes_thread.join()
-    notes = notes_thread.result()
-
-    prompt = prompt.replace('<<NOTES>>', notes)
-
+    prompt = open_file('prompt_response.txt').replace('<<INVENTORY>>', inventory).replace('<<NOTES>>', notes).replace('<<CONVERSATION>>', recent)
     output = gpt3_completion(prompt)
-
+    
     # Insert chatbot's message into chat_log table
     timestamp = time()
-    message = f"Chatbot: {output}"
-    vector_blob = pickle.dumps(gpt3_embedding(output))
-    cur.execute("INSERT INTO chat_log VALUES (?, ?, ?, ?, ?)",
-                (str(uuid4()), 'chatbot', timestamp, message, vector_blob))
-    conn.commit()
-
-    # Close database connection
-    conn.close()
-
-    # Return output
+    vector = gpt3_embedding(output)
+    info = {'id': str(uuid4()), 'role': 'assistant', 'timestamp': timestamp, 'message':output ,'vector':vector}
+    vdb.add(info)
+    vdb.details()
+    vdb.save('my_data.vdb')
+   # Return output
     return output
+
+
+def get_chat_messages():
+    vdb = vdblite.Vdb()
+    vdb.load('my_data.vdb')
+    result = vdb.fetchAll()
+    
+    return result or []
+
+
+
+
+
+
