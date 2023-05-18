@@ -9,15 +9,13 @@ import datetime
 from uuid import uuid4
 import json
 from numpy.linalg import norm
-import re
-import sqlite3
 import pickle
 from datetime import datetime
-# load_dotenv()
 import vdblite
-# openai.api_key = os.getenv('OPENAI_API_KEY')
-with open('openaiapikey.txt', 'r') as infile:
-    openai.api_key = infile.read()
+load_dotenv()
+
+openai.api_key = os.getenv('OPENAI_API_KEY')
+
 
 datafile_path = "data/pbd-inventory-published-embeded.csv"
 
