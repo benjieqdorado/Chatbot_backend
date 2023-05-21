@@ -4,34 +4,34 @@ import numpy as np
 import os
 from openai.embeddings_utils import get_embedding, cosine_similarity
 from dotenv import load_dotenv
-from time import time,sleep
-import datetime
+from time import time, sleep
 from uuid import uuid4
-import json
 from numpy.linalg import norm
 import pickle
 from datetime import datetime
-import vdblite
+from utils.database_helper import DatabaseHelper
+import pickle
+import re
+from utils.file_helper import FileHelper
+
 load_dotenv()
 
+
+
 openai.api_key = os.getenv('OPENAI_API_KEY')
-
-
 datafile_path = "data/pbd-inventory-published-embeded.csv"
 
 df = pd.read_csv(datafile_path)
 df["embedding"] = df.embedding.apply(eval).apply(np.array)
 
+class ChatBot:
 
-def open_file(filepath):
-    with open(filepath, 'r', encoding='utf-8') as infile:
-        return infile.read()
-    
-def save_file(filepath, content):
-    with open(filepath, 'w', encoding='utf-8') as outfile:
-        outfile.write(content)
-          
-def fetch_inventory(df, search_term, n=3, pprint=True):
+
+ def __init__(self):
+        self.create = DatabaseHelper()
+        self.file = FileHelper()
+ 
+ def fetch_inventory(self,df, search_term, n=3, pprint=True):
 
     search_embedding = get_embedding(
         search_term,
@@ -68,59 +68,29 @@ def fetch_inventory(df, search_term, n=3, pprint=True):
         })
 
     output_df = pd.DataFrame(rows, columns=["product_name", "stock_status", "regular_price",
-                             "images", "product_category", "product_brand","product_caliber","product_link"])
-
+                             "images", "product_category", "product_brand", "product_caliber", "product_link"])
 
     output_string = output_df.to_string(index=False)
 
     return output_string
 
-def similarity(v1, v2):
-    # based upon https://stackoverflow.com/questions/18424228/cosine-similarity-between-2-number-lists
-    return np.dot(v1, v2)/(norm(v1)*norm(v2))  # return cosine similarity
 
-def load_json(filepath):
-    with open(filepath, 'r', encoding='utf-8') as infile:
-        return json.load(infile)
-    
-def gpt3_embedding(content, engine='text-embedding-ada-002'):
-    content = content.encode(encoding='ASCII',errors='ignore').decode()
-    response = openai.Embedding.create(input=content,engine=engine)
+ def gpt3_embedding(self,content, model='text-embedding-ada-002'):
+    content = str(content)
+    content = content.encode(encoding='ASCII', errors='ignore').decode()
+    response = openai.Embedding.create(input=content,model=model,)
     vector = response['data'][0]['embedding']  # this is a normal list
     return vector
 
-def timestamp_to_datetime(unix_time):
-    return datetime.datetime.fromtimestamp(unix_time).strftime("%A, %B %d, %Y at %I:%M%p %Z")
 
-def save_json(filepath, payload):
-    with open(filepath, 'w', encoding='utf-8') as outfile:
-        json.dump(payload, outfile, ensure_ascii=False, sort_keys=True, indent=2)
-
-def load_convo(cur):
-    cur.execute("SELECT id, role, timestamp, message, vector FROM chat_log")
-    rows = cur.fetchall()
-    log_list = []
-    for log in rows:
-        log_dict = {
-            'id': log[0],
-            'role': log[1],
-            'timestamp': log[2],
-            'message': log[3],
-            'vector': pickle.loads(log[4])
-        }
-        log_list.append(log_dict)
-    return log_list
-
-
-async def fetch_memories(vector, logs, count):
+ def fetch_memories(self,vector, logs, count):
     scores = []
 
     for log in logs:
-
         if vector == log['vector']:
             # skip this one because it is the same message
             continue
-        score = similarity(log['vector'], vector)
+        score = cosine_similarity(log['vector'], vector)
         log['score'] = score
         scores.append(log)
     ordered = sorted(scores, key=lambda d: d['score'], reverse=True)
@@ -130,12 +100,12 @@ async def fetch_memories(vector, logs, count):
         return ordered
     except:
         return ordered
-    
 
-def gpt3_completion(prompt, engine='text-davinci-003', temp=0.7, top_p=1.0, tokens=400, freq_pen=0.0, pres_pen=0.0, stop=['Customer:', 'Chatbot:']):
+
+ def gpt3_completion(self,prompt, engine='text-davinci-003', temp=0.7, top_p=1.0, tokens=400, freq_pen=0.0, pres_pen=0.0, stop=['User:', 'Assistant:'],stream = False):
     max_retry = 5
     retry = 0
-    prompt = prompt.encode(encoding='ASCII',errors='ignore').decode()
+    prompt = prompt.encode(encoding='ASCII', errors='ignore').decode()
     while True:
         try:
             response = openai.Completion.create(
@@ -146,14 +116,16 @@ def gpt3_completion(prompt, engine='text-davinci-003', temp=0.7, top_p=1.0, toke
                 top_p=top_p,
                 frequency_penalty=freq_pen,
                 presence_penalty=pres_pen,
-                stop=stop)
+                stop=stop,
+                stream=stream
+                )
             text = response['choices'][0]['text'].strip()
-            # text = re.sub('[\r\n]+', '\n', text)
-            # text = re.sub('[\t ]+', ' ', text)
-            # filename = '%s_gpt3.txt' % time()
-            # if not os.path.exists('gpt3_logs'):
-            #     os.makedirs('gpt3_logs')
-            # save_file('gpt3_logs/%s' % filename, prompt + '\n\n==========\n\n' + text)
+            text = re.sub('[\r\n]+', '\n', text)
+            text = re.sub('[\t ]+', ' ', text)
+            filename = '%s_gpt3.txt' % time()
+            if not os.path.exists('gpt3_logs'):
+                os.makedirs('gpt3_logs')
+            self.file.save_file('gpt3_logs/%s' % filename, prompt + '\n\n==========\n\n' + text)
             return text
         except Exception as oops:
             retry += 1
@@ -163,21 +135,20 @@ def gpt3_completion(prompt, engine='text-davinci-003', temp=0.7, top_p=1.0, toke
             sleep(1)
 
 
-def summarize_memories(memories):  
+ def summarize_memories(self,conn,memories):
    # Summarizes a block of memories into one payload.
 
     # Sort memories chronologically
-    memories = sorted(memories, key=lambda d: d['timestamp'])
+    memories = sorted(memories, key=lambda d: d['time'])
 
     # Collect message content, identifiers, and timestamps
     message_block = ''
     identifiers = []
     timestamps = []
     for memory in memories:
-        message_block += memory['message'] + '\n\n'
-        identifiers.append(memory['id'])
-        timestamps.append(memory['timestamp'])
-
+        message_block += memory['role'].upper() + ': ' + memory['message'] + '\n\n'
+        identifiers.append(memory['uuid'])
+        timestamps.append(memory['time'])
 
     # Remove trailing whitespace
     message_block = message_block.strip()
@@ -188,82 +159,101 @@ def summarize_memories(memories):
     else:
         with open('prompt_notes.txt', 'r') as f:
             prompt = f.read().replace('<<INPUT>>', message_block)
+
+    notes = self.gpt3_completion(prompt)
     
-    notes = gpt3_completion(prompt)
 
     # Save notes and metadata to database
-    # vector = gpt3_embedding(message_block)
-    # notes_id = str(uuid4())
-    # timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    # timestamp_str = ','.join(map(str, timestamps))
-    # chatlogs_ids = ','.join(map(str, identifiers))
-    # vector_blob = pickle.dumps(vector)
-    # conn = sqlite3.connect('chatbot.db')
-    # cur = conn.cursor()
-    # cur.execute("INSERT INTO notes VALUES (?, ?, ?, ?, ?, ?)",
-    #             (notes_id, notes, timestamp, timestamp_str, chatlogs_ids, vector_blob))
-    # conn.commit()
-    # conn.close()
+    vector = self.gpt3_embedding(message_block)
+    serialized_vector = pickle.dumps(vector)
+    timestamp_str = ','.join(map(str, timestamps))
+    uuids = ','.join(map(str, identifiers))
+    uuid = str(uuid4())
+    timestamp = time()
+    note_data = (uuid, notes, timestamp, uuids, timestamp_str,serialized_vector)
+    self.create.create_notes(conn, note_data)
 
     return notes
 
-def get_last_messages(conversation, limit):
+
+ def get_last_messages(self,conversation, limit):
     try:
         short = conversation[-limit:]
     except:
         short = conversation
     output = ''
     for i in short:
-        output += '%s: %s\n\n' % (i['role'], i['message'])  # Added role before the message
+        # Added role before the message
+        output += '%s: %s\n\n' % (i['role'].upper(), i['message'])
     output = output.strip()
     return output
 
- 
 
-vdb = vdblite.Vdb()
-# vdb.load('my_data.vdb') or 
+ def ask_chatgpt_question(self,question):
 
-def ask_chatgpt_question(question):
+    db_folder = "db"
+    db_name = "chatbot.db"
+    database = os.path.join(os.getcwd(), db_folder, db_name)
+
+    conn = self.create.create_connection(database)
     # Insert customer's message into chat_log table
     timestamp = time()
-    vector = gpt3_embedding(question)
-    info = {'id': str(uuid4()), 'role': 'user', 'timestamp': timestamp, 'message':question ,'vector':vector}
-    vdb.add(info)
-    vdb.details()
-    vdb.save('my_data.vdb')
-    conversation = vdb.search(vector, 'vector', 10)
-    notes = summarize_memories(conversation)
+    vector = self.gpt3_embedding(question)
+    serialized_vector = pickle.dumps(vector)
+    uuid = str(uuid4())
+    role = 'user'
+    chatlog = (uuid, role, timestamp, question, serialized_vector)
+    self.create.create_chatlog(conn, chatlog)
+
+    conversation = self.create.fetch_all_chatlogs(conn)
+
+    memories = self.fetch_memories(vector, conversation, 10)
+
+    notes = self.summarize_memories(conn,memories)
+    
     # Fetch recent messages and inventory
-    recent = get_last_messages(vdb.fetchAll(), 5)
+    recent = self.get_last_messages(conversation, 4)
     df = pd.read_csv("data/pbd-inventory-published-embeded.csv")
     df["embedding"] = df.embedding.apply(eval).apply(np.array)
-    inventory = fetch_inventory(df, question, 3)
-   
-    recent = question
+    inventory = self.fetch_inventory(df, question, 3)
+
     # Generate response
-    prompt = open_file('prompt_response.txt').replace('<<INVENTORY>>', inventory).replace('<<NOTES>>', notes).replace('<<CONVERSATION>>', recent)
-    output = gpt3_completion(prompt)
-    
-    # Insert chatbot's message into chat_log table
+    prompt = self.file.open_file('prompt_response.txt').replace('<<INVENTORY>>', inventory).replace('<<NOTES>>', notes).replace('<<CONVERSATION>>', recent)
+    output = self.gpt3_completion(prompt)
+   
+    # Insert chatbot's answer into chat_log table
     timestamp = time()
-    vector = gpt3_embedding(output)
-    info = {'id': str(uuid4()), 'role': 'assistant', 'timestamp': timestamp, 'message':output ,'vector':vector}
-    vdb.add(info)
-    vdb.details()
-    vdb.save('my_data.vdb')
+    vector = self.gpt3_embedding(question)
+    serialized_vector = pickle.dumps(vector)
+    uuid = str(uuid4())
+    role = 'assistant'
+    chatlog = (uuid, role, timestamp, output, serialized_vector)
+    self.create.create_chatlog(conn, chatlog)
    # Return output
     return output
 
 
-def get_chat_messages():
-    vdb = vdblite.Vdb()
-    vdb.load('my_data.vdb')
-    result = vdb.fetchAll()
+ def get_chat_messages(self):
+
+    db_folder = "db"
+    db_name = "chatbot.db"
+    database = os.path.join(os.getcwd(), db_folder, db_name)
+
+    conn = self.create.create_connection(database)
+    curr = conn.cursor()
+
+    curr.execute(f"SELECT uuid, role, time, message FROM chatlogs")
+
+    rows = curr.fetchall()
+
+    log_list = []
+    for log in rows:
+        log_dict = {
+            'uuid': log[0],
+            'role': log[1],
+            'time': log[2],
+            'message': log[3],
+        }
+        log_list.append(log_dict)
     
-    return result or []
-
-
-
-
-
-
+    return log_list

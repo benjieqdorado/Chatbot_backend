@@ -3,7 +3,7 @@ from flask_restful import Api, Resource
 import pprint
 from flask_cors import CORS
 from shared.constant import Constant
-from services.ChatGPT import ask_chatgpt_question,get_chat_messages
+from services.chatgpt import ChatBot
 import datetime
 import time
 
@@ -14,6 +14,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 CONSTANTS = Constant
 pp = pprint.PrettyPrinter(indent=4)
 
+chatbot = ChatBot()
 ###############################
 ### Chat GPT api request    ###
 ###############################
@@ -21,13 +22,13 @@ pp = pprint.PrettyPrinter(indent=4)
 
 @app.route(CONSTANTS.URLS['CHATGPT_QUESTION'], methods=['GET'])
 def get():
-    return get_chat_messages()
+    return chatbot.get_chat_messages()
 
 
 @app.route(CONSTANTS.URLS['CHATGPT_QUESTION'], methods=['POST'])
 def askQuestion():
     start_time = time.time()
-    response = ask_chatgpt_question(request.json['question'])
+    response = chatbot.ask_chatgpt_question(request.json['question'])
     end_time = time.time()
     time_elapsed = end_time - start_time
     
