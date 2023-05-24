@@ -20,6 +20,11 @@ chatbot = ChatBot()
 ###############################
 
 
+
+@app.route('/')
+def home():
+    return 'This is Chatbot Backend'
+
 @app.route(CONSTANTS.URLS['CHATGPT_QUESTION'], methods=['GET'])
 def get():
     return chatbot.get_chat_messages()
