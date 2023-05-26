@@ -213,7 +213,7 @@ class ChatBot:
 
         df = pd.read_csv("data/pbd-inventory-published-embeded.csv")
         df["embedding"] = df.embedding.apply(eval).apply(np.array)
-        inventory = self.fetch_inventory(df, question, 3)
+        inventory = self.fetch_inventory(df, question, 1)
 
         # Generate response
         prompt = self.file.open_file('prompt/prompt_response.txt').replace(
