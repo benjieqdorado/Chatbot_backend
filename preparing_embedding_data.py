@@ -2,13 +2,15 @@ import pandas as pd
 import tiktoken
 import openai
 from openai.embeddings_utils import get_embedding
+import os
 
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 def open_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as infile:
         return infile.read()
 
-openai.api_key = open_file('openaiapikey.txt')
+
 
 # embedding model parameters
 embedding_model = "text-embedding-ada-002"
@@ -40,3 +42,9 @@ df["n_tokens"] = df["combined"].apply(lambda x: len(encoding.encode(x)))
 # This may take a few minutes
 df["embedding"] = df.apply(lambda row: get_embedding(row["combined"], engine=embedding_model), axis=1)
 df.to_csv("data/pbd-inventory-published-embeded.csv")
+
+
+
+
+
+
