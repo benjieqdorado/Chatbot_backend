@@ -3,7 +3,7 @@ from flask_restful import Api, Resource
 import pprint
 from flask_cors import CORS
 from shared.constant import Constant
-from services.ChatGPT import ChatBot
+from services.chatgpt import ChatBot
 
 
 app = Flask(__name__)
